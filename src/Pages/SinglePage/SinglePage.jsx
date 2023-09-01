@@ -6,7 +6,6 @@ export default function SinglePage({ item }) {
 
     const ingredientKeys = Object.keys(item).filter(key => key.includes('strIngredient'))
 
- 
     const ingredients = ingredientKeys.reduce((acc, ingredientKey) => {
         const ingredient = item[ingredientKey]
         if (ingredient) {
@@ -34,8 +33,6 @@ export default function SinglePage({ item }) {
                         <p className='btn-back__name'>Back</p> 
                     </Link>
                 </div>
-            
-            
             </div>
         </div>
         
