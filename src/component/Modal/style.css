@@ -1,0 +1,79 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content{
+    width: 50%;
+    background-color: #f3f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(247, 246, 246, 0.1);
+    position: relative;
+}
+
+.modal__form{
+    display: flex;
+    flex-direction: column; 
+}
+
+.modal__field {
+    padding: 14px 7px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* .modal__field-name{
+    margin-top: 30px;
+} */
+
+.modal__field::placeholder {
+    color: var(--black);
+    font-family: Anonymous Pro;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px;
+}
+
+.modal__field-message {
+    height: 230px;
+    padding: 7px 0 0 14px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.modal__button {
+    background-color: var(--wite);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Anonymous Pro;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    padding: 7px 0 0 14px;
+}
+
+.modal__close {
+    top: -48px;
+    right: -25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.modal__close-btn{
+    color: #fff;
+}

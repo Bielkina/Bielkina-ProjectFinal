@@ -1,0 +1,147 @@
+@import url('../../global.css');
+
+
+
+.footer{
+    background: linear-gradient(180deg, rgba(175, 162, 94, 1) 8%, rgba(0, 0, 0, 1) 62%, rgba(0, 0, 0, 1) 99%);
+    padding-bottom: 20px;
+}
+
+.footer__container{
+    padding: 6vw 4vw 11vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+
+.footer__title{
+    color: var(--yellow);
+    font-family: Anonymous Pro;
+    font-size: 5.2vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.info{
+    max-width: 30%;
+}
+
+.info__item{
+    display: flex;
+    gap: 2.5vw;
+    margin-bottom: 6vw;
+}
+
+.info__icon{
+    width: 4vw;
+}
+
+.info__text{
+    color: var(--wite);
+    font-family: Anonymous Pro;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.follow__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4vw;
+}
+
+.follow__link{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.follow__icon {
+    width: 4vw;
+}
+
+.follow__link:hover{
+    scale: 1.1;
+    transition: 0.8s;
+}
+
+.follow__name{
+    color: var(--wite);
+    font-family: Anonymous Pro;
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerDown{
+    margin-bottom: 2vw;
+}
+
+.footerDown__text{
+    color: #FFFA8E;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footerDown__span{
+    color: #FFF;
+    font-family: Anonymous Pro;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+@media (max-width: 390px){
+  
+.footer__container{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+} 
+  
+.footer__title{
+   font-size: 64px; 
+   text-align: center;
+}
+  
+.info {
+    max-width: 100%;
+}
+
+
+.info__icon {
+    width: 40px;
+}
+
+.info__text{
+    font-size: 24px;
+}
+
+.follow__item{
+    display: flex;
+}
+
+.follow__icon {
+    width: 50px;
+}
+
+.follow__name{
+    display: none;
+}
+
+.follow__list{
+    flex-direction: row;
+}
+
+}

@@ -1,0 +1,58 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    max-width: 33vw;
+    margin: 0 auto;
+}
+
+.form__field{
+    padding: 14px 7px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2vw;
+}
+
+.form__field::placeholder{
+    color: var(--black);
+    font-family: Anonymous Pro;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px;
+}
+
+.form__field-message{
+    height: 20vw;
+    padding: 7px 0 0 14px;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.form__button{
+    background-color: var(--wite);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Anonymous Pro;
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 390px){
+    .form {
+        max-width: 100%;
+    }
+
+    .form__field::placeholder {
+        font-size: 24px;
+    }
+
+    .form__button{
+        font-size: 24px;
+    }
+
+
+}

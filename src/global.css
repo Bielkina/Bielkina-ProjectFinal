@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    background-color: black;
+    
+}
+
+.wrapper__container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+
+
+:root {
+    
+    /* Colors */
+
+    --black: #000000;
+    --yellow: #FFFA8E;
+    --wite: #fff;
+
+
+}

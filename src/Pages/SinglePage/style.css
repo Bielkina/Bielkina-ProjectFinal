@@ -1,0 +1,110 @@
+
+.single{
+    background-color: var(--black);
+}
+
+.single__card{
+    display: flex;
+    padding: 4vw;
+    gap: 2.5vw;
+    position: relative;
+}
+
+.single__img{
+    width: 50%;
+    border-radius: 2vw; 
+}
+
+.single__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.single__title {
+    margin: 2vw;
+    color: var(--yellow);
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 5.5vw;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.single__text, .single__price{
+    color: #FFFA8E;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2vw;
+}
+
+.card__ingridients{
+    align-self: center;
+}
+
+.single__name{
+    color: #FFFA8E;
+    text-align: left;
+    font-family: Anonymous Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.card__item{
+    color: #FFFA8E;
+    text-align: left;
+    font-family: Anonymous Pro;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.btn-back{
+    border: solid 1px;
+    border-color: var(--yellow);
+    border-radius: 20px;
+    margin-left: 35vw;
+    width: fit-content;
+}
+
+.btn-back__name{
+    color: #FFFA8E;
+    text-align: center;
+    font-family: Anonymous Pro;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 767px){
+.single__card {
+    flex-direction: column;
+}
+
+.single__img{
+    width: 100%;
+}
+
+.btn-back__name{
+    font-size: 5.5vw;
+}
+
+.single__price,  .single__text{
+    font-size: 4.5vw;
+}
+
+}
+

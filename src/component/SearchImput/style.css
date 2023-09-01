@@ -1,0 +1,119 @@
+.search {
+    width: 25vw;
+    height: 8.5vw;
+}
+
+.search__div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5.5vw;
+    height: 5.5vw;
+    background: #e8d35d;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 2vw 0 rgba(0, 0, 0, 0.4);
+}
+
+.search__div:hover {
+    cursor: pointer;
+}
+
+.search__div::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 2vw;
+    right: 0;
+    bottom: 0;
+    left: 2vw;
+    width: 1vw;
+    height: 0.2vw;
+    background: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+.search__div::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -0.4vw;
+    right: 0;
+    bottom: 0;
+    left: -0.4vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: 0.2vw solid white;
+    transition: all .5s;
+}
+
+.search__inp {
+    font-family: Anonymous Pro;
+    font-size: 2vw;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 4vw;
+    height: 4vw;
+    outline: none;
+    border: none;
+    background: var(--yellow);
+    color: var(--black);
+    text-shadow: 0 0 2vw var(--yellow);
+    padding: 0 7vw 0 2vw;
+    border-radius: 2.5vw;
+    box-shadow: 0 0 2vw 0 var(--yellow), 0 2vw 2vw 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 2vw 0 rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+}
+
+.search__inp:hover {
+    cursor: pointer;
+}
+
+.search__inp:focus {
+    width: 25vw;
+    opacity: 1;
+    cursor: text;
+}
+
+.search__inp:focus~.search__div {
+    right: -21vw;
+    background: var(--black);
+    z-index: 6;
+}
+
+.search__inp:focus~.search__div::before {
+    top: 0;
+    left: 0;
+    width: 2vw;
+}
+
+.search__inp:focus~.search__div::after {
+    top: 0;
+    left: 0;
+    width: 2vw;
+    height: 2px;
+    border: none;
+    background: var(--wite);
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.search__inp::placeholder {
+    color: var(--black);
+    opacity: 0.5;
+    font-weight: bolder;
+}
